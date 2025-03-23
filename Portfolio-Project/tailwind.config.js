@@ -39,7 +39,7 @@ export default {
     },
     fontFamily: {
       body: ["Josefin Sans"],
-      special: ['"Nunito"'],
+      special: ["Roboto"],
     },
   },
   safelist: [

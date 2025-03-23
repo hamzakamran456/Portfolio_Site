@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import NavbarLogo from "./NavbarLogo";
-import { NavbarLinks } from "./NavbarLinks";
-import { NavbarBtn } from "./NavbarBtn";
+import NavbarLinks from "./NavbarLinks";
+import NavbarBtn from "./NavbarBtn";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const NavbarMain = () => {
   const [menuOpen, setmenuOpen] = useState(false);
   const toggleMenu = () => {
-    setmenuOpen(menuOpen);
+    setmenuOpen(!menuOpen);
   };
 
   return (
