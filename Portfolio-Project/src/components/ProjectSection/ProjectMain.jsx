@@ -31,13 +31,27 @@ const Projects = [
     image: "../../public/images/website-img-4.jpg",
     link: "#",
   },
+  {
+    name: "Tourzania",
+    year: "Jan2023",
+    align: "right",
+    image: "../../public/images/website-img-3.jpg",
+    link: "#",
+  },
+  {
+    name: "Bank of Luck",
+    year: "May2024",
+    align: "left",
+    image: "../../public/images/website-img-4.jpg",
+    link: "#",
+  },
 ];
 
 const ProjectMain = () => {
   return (
-    <div className=" flex flex-col items-center mt-[100px]">
+    <div id="projects" className="max-w-[1200px] mx-auto px-4">
       <ProjectText />
-      <div>
+      <div className="flex flex-col gap-20 max-w-[900px] mx-auto mt-12">
         {Projects.map((item, index) => {
           return (
             <SingleProject
@@ -46,6 +60,7 @@ const ProjectMain = () => {
               year={item.year}
               align={item.align}
               image={item.image}
+              link={item.link}
             />
           );
         })}
