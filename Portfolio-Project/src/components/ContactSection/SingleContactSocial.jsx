@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const SingleContactSocial = () => {
+const SingleContactSocial = ({ Icon, Link }) => {
   return (
-    <div>SingleContactSocial</div>
-  )
-}
+    <div className="text-2xl w-12 h-12 border border-orange text-orange rounded-full p-3 flex items-center">
+      <a href={Link} className="cursor-pointer">
+        {Icon && <Icon />}
+      </a>
+    </div>
+  );
+};
 
-export default SingleContactSocial
+export default SingleContactSocial;

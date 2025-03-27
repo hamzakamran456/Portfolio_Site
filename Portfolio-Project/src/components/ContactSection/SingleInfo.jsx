@@ -2,8 +2,8 @@ import React from "react";
 
 const SingleInfo = ({ text, Image }) => {
   return (
-    <div>
-      <image className="flex gap-4 items-center justify-start" />
+    <div className="flex gap-4 items-center justify-start">
+      {Image &&<Image className="text-3xl text-white" />}
       <p>{text}</p>
     </div>
   );
