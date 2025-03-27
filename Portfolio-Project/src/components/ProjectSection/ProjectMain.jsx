@@ -38,7 +38,17 @@ const ProjectMain = () => {
     <div className=" flex flex-col items-center mt-[100px]">
       <ProjectText />
       <div>
-        <SingleProject />
+        {Projects.map((item, index) => {
+          return (
+            <SingleProject
+              key={index}
+              name={item.name}
+              year={item.year}
+              align={item.align}
+              image={item.image}
+            />
+          );
+        })}
       </div>
     </div>
   );
