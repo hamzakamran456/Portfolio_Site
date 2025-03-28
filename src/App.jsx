@@ -8,7 +8,7 @@ import HeroMain from "./components/HeroSection/HeroMain";
 import SubHeroSection from "./components/HeroSection/SubHeroSection";
 import NavbarMain from "./components/Navbar/NavbarMain";
 import ProjectMain from "./components/ProjectSection/ProjectMain";
-import SkillsMain from "./components/skillsSection/SkillsMain";
+import SkillsMain from "./components/SkillsSection/SkillsMain";
 import SubSkills from "./components/SkillsSection/SubSkills";
 
 function App() {
