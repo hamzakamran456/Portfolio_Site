@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../framerMotion/variants";
 
 const links = [
   { link: "About Me", section: "about" },
@@ -10,7 +12,13 @@ const links = [
 
 const FooterMain = () => {
   return (
-    <div className="px-4">
+    <motion.div
+      variants={fadeIn("down", 0.2)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0 }}
+      className="px-4"
+    >
       <div className="w-full h-[1px] bg-lightGrey mt-24"></div>
       <div className="md:flex sm:hidden justify-between mt-4 max-w-[1200px] mx-auto">
         <p className="text-3xl text-lightGrey">Hamza Kamran</p>
@@ -32,7 +40,7 @@ const FooterMain = () => {
       <p className="max-w-[1200px] mx-auto text-right mt-2 mb-6 text-sm text-lightBrown">
         © 2024 HamzaKamran | All Rights Reserved.
       </p>
-    </div>
+    </motion.div>
   );
 };
 
