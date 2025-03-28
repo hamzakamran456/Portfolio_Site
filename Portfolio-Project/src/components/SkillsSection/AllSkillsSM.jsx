@@ -8,7 +8,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { BsGit } from "react-icons/bs";
 import { FaFigma } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../framerMotion/variants";
+import { fadeIn } from "../framerMotion/variants";
 
 const skills = [
   {

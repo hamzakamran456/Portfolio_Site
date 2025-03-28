@@ -3,7 +3,7 @@ import ExperienceText from "./ExperienceText";
 import ExperienceTop from "./ExperienceTop";
 import AllExperience from "./AllExperience";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../framerMotion/variants";
+import { fadeIn } from "../framerMotion/variants";
 
 const ExperienceMain = () => {
   return (

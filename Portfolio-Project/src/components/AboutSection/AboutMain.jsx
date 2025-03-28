@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../framerMotion/variants";
+import { fadeIn } from "../framerMotion/variants";
 import AboutText from "./AboutText";
 import AboutImage from "./AboutImage";
 
