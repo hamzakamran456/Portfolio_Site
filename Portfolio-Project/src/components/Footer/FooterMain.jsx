@@ -18,13 +18,20 @@ const FooterMain = () => {
           {links.map((item, index) => {
             return (
               <li key={index}>
-                <a href="#" className="hover:text-white transition-all duration-500 cursor-pointer">{item.link}</a>
+                <a
+                  href="#"
+                  className="hover:text-white transition-all duration-500 cursor-pointer"
+                >
+                  {item.link}
+                </a>
               </li>
             );
           })}
         </ul>
       </div>
-      <p className="max-w-[1200px] mx-auto text-right mt-2 mb-6 text-sm text-lightBrown">© 2024 HamzaKamran | All Rights Reserved.</p>
+      <p className="max-w-[1200px] mx-auto text-right mt-2 mb-6 text-sm text-lightBrown">
+        © 2024 HamzaKamran | All Rights Reserved.
+      </p>
     </div>
   );
 };
