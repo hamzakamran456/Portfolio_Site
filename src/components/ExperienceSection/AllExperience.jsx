@@ -41,26 +41,26 @@ const experiences = [
 const AllExperience = () => {
   return (
     <div className="flex md:flex-row sm:flex-col items-center justify-between">
-      {experiences.map((experience, index) => {
-        return (
-          <>
-            <SingleExperience key={index} experience={experience} />;
-            {index < 2 ? (
-              <motion.div
-                variants={fadeIn("right", 0)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: false, amount: 0.7 }}
-              >
-                <FaArrowRight className="text-6xl text-orange lg:block sm:hidden" />
-              </motion.div>
-            ) : (
-              ""
-            )}
-          </>
-        );
-      })}
-    </div>
+  {experiences.map((experience, index) => {
+    return (
+      <div key={index} className="flex items-center">
+        <SingleExperience experience={experience} />
+        {index < experiences.length - 1 && ( 
+          <motion.div
+            className="flex items-center justify-center h-full"
+            variants={fadeIn("right", 0)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.7 }}
+          >
+            <FaArrowRight className="text-6xl text-orange text-center xl:mx-14 lg:mx-6 lg:block sm:hidden" />
+          </motion.div>
+        )}
+      </div>
+    );
+  })}
+</div>
+
   );
 };
 
