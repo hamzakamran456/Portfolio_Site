@@ -4,7 +4,7 @@ const AboutText = () => {
   return (
     <div className="flex flex-col md:items-start sm:items-center md:text-left sm:text-centers">
       <h2 className="text-6xl text-cyan mb-10">About Me</h2>
-      <p className="text-white">
+      <p className="text-white mb-6">
         I’m Hamza Kamran, a passionate Front-End Developer with expertise in
         Html,Css React, JavaScript, and modern web technologies. I love creating
         intuitive, high-performance, and visually appealing user interfaces.
