@@ -9,7 +9,7 @@ const Projects = [
     name: "Vacation of Africa",
     year: "Mar2022",
     align: "right",
-    image: "../../public/images/website-img-1.png",
+    image: "../../public/images/website-img-1.jpg",
     link: "#",
   },
   {
