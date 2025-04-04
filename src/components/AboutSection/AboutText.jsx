@@ -14,8 +14,11 @@ const AboutText = () => {
         continuous learning, innovation, and sharing knowledge to inspire others
         in their tech journey.
       </p>
-      <button className="border border-orange rounded-full py-2 px-4 text-lg flex items-center mb-10 hover:bg-orange transition-all duration-500 cursor-pointer md:self-start text-white hover:text-cyan">
-        My Project
+      <button
+        onClick={() => window.open("/public/Hamza Kamran - Frontend Developer.pdf", "_blank")}
+        className="border border-orange rounded-full py-2 px-4 text-lg flex items-center mb-10 hover:bg-orange transition-all duration-500 cursor-pointer md:self-start text-white hover:text-cyan"
+      >
+        Resume
       </button>
     </div>
   );
