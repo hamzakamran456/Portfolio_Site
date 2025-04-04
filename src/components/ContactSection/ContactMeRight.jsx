@@ -2,7 +2,8 @@ import React from "react";
 import ContactInfo from "./ContactInfo";
 import ContactSocial from "./ContactSocial";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../framerMotion/variants";
+import { fadeIn } from "../framerMotion/variants";
+import EmailImg from "/public/images/email-image.png";
 
 
 const ContactMeRight = () => {
@@ -15,7 +16,7 @@ const ContactMeRight = () => {
         viewport={{ once: false, amount: 0 }}
       >
         <img
-          src="../../public/images/email-image.png"
+          src={EmailImg}
           alt="Contact Me"
           className="max-w-[300px]"
         />

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaHtml5 } from "react-icons/fa";
+import SingleSkills from "./SingleSkills";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiReactjsLine } from "react-icons/ri";
@@ -8,7 +9,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { BsGit } from "react-icons/bs";
 import { FaFigma } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../framerMotion/variants";
+import { fadeIn } from "../framerMotion/variants";
 
 const skills = [
   {
@@ -45,21 +46,23 @@ const skills = [
   },
 ];
 
-const AllSkillsSM = () => {
+const AllSkills = () => {
   return (
-    <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-12 my-12">
+    <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto">
       {skills.map((item, index) => {
         return (
           <motion.div
-            variants={fadeIn("up", 0.2)}
+            variants={fadeIn("up", `0.${index}`)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: false, amount: 0 }}
             key={index}
-            className="flex flex-col items-center"
           >
-            <item.icon className="text-2xl text-orange w-[100px] h-[100px]" />
-            <p className="text-center text-white mt-4">{item.skills}</p>
+            <SingleSkills
+              key={index}
+              text={item.skills}
+              imgSvg={<item.icon />}
+            />
           </motion.div>
         );
       })}
@@ -67,4 +70,4 @@ const AllSkillsSM = () => {
   );
 };
 
-export default AllSkillsSM;
+export default AllSkills;

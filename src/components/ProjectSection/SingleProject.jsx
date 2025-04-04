@@ -1,7 +1,7 @@
 import React from "react";
 import { BiSolidRightTopArrowCircle } from "react-icons/bi";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../framerMotion/variants";
+import { fadeIn } from "../framerMotion/variants";
 
 const SingleProject = ({ name, year, align, image, link }) => {
   return (
