@@ -23,7 +23,7 @@ const SingleProject = ({ name, text, align, image, link }) => {
           {name}
         </h2>
         <h2
-          className={`text-xl font-thin text-white font-special sm:text-center ${
+          className={`text-xl font-thin text-white font-special mb-4 sm:text-center ${
             align === "left" ? "md:text-right" : "md:text-left"
           }`}
         >
@@ -33,7 +33,7 @@ const SingleProject = ({ name, text, align, image, link }) => {
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className={`text-lg flex gap-2 items-center text-cyan hover:text-orange transition-all duration-500 cursor-pointer sm:justify-self-center ${
+          className={`text-lg flex gap-2 items-center text-cyan border border-cyan px-4 py-2 rounded-full bg-transparent hover:bg-orange hover:text-white transition-all duration-500 cursor-pointer sm:justify-self-center ${
             align === "left" ? "md:justify-self-end" : "md:justify-self-start"
           }`}
         >
