@@ -15,7 +15,7 @@ const AboutText = () => {
         in their tech journey.
       </p>
       <button
-        onClick={() => window.open("/public/Hamza Kamran - Frontend Developer.pdf", "_blank")}
+        onClick={() => window.open("/public/Hamza-Kamran-Resume.pdf", "_blank")}
         className="border border-orange rounded-full py-2 px-4 text-lg flex items-center mb-10 hover:bg-orange transition-all duration-500 cursor-pointer md:self-start text-white hover:text-cyan"
       >
         Resume
