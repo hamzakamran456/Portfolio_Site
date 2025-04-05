@@ -6,46 +6,46 @@ import { fadeIn } from "../framerMotion/variants";
 
 const Projects = [
   {
-    name: "Vacation of Africa",
-    year: "Mar2022",
+    name: "Automation AI Agents",
+    text: "A smart automation platform powered by AI agents for efficient task handling.",
     align: "right",
-    image: "../../public/images/website-img-1.jpg",
-    link: "#",
+    image: "../../public/images/web-1.png",
+    link: "https://automation-page-main.vercel.app/",
   },
   {
-    name: "Moola App",
-    year: "Sept2022",
+    name: "DashBoard",
+    text: "An interactive dashboard for visualizing and managing data insights effectively.",
     align: "left",
-    image: "../../public/images/website-img-2.webp",
-    link: "#",
+    image: "../../public/images/web-2.png",
+    link: "https://dash-board-page-three.vercel.app/",
   },
   {
-    name: "Tourzania",
-    year: "Jan2023",
+    name: "Cara Ecommerce",
+    text: "A sleek and modern ecommerce platform designed for a seamless shopping experience.",
     align: "right",
-    image: "../../public/images/website-img-3.jpg",
-    link: "#",
+    image: "../../public/images/web-3.png",
+    link: "https://hamza-ecommere-site.vercel.app/",
   },
   {
-    name: "Bank of Luck",
-    year: "May2024",
+    name: "Shopper Ecommerce",
+    text: "A user-friendly ecommerce site offering smooth navigation and fast checkout.",
     align: "left",
-    image: "../../public/images/website-img-4.jpg",
-    link: "#",
+    image: "../../public/images/web-4.png",
+    link: "https://react-ecommerce-site-sooty.vercel.app/",
   },
   {
-    name: "Tourzania",
-    year: "Jan2023",
+    name: "Travello Go",
+    text: "A vibrant travel website for discovering destinations and planning trips with ease.",
     align: "right",
-    image: "../../public/images/website-img-3.jpg",
-    link: "#",
+    image: "../../public/images/web-5.png",
+    link: "https://travel-react-site.vercel.app/",
   },
   {
-    name: "Bank of Luck",
-    year: "May2024",
+    name: "Gemini Clone",
+    text: "A sleek clone of Google's Gemini AI interface with responsive design and chat features.",
     align: "left",
-    image: "../../public/images/website-img-4.jpg",
-    link: "#",
+    image: "../../public/images/web-6.png",
+    link: "https://gemini-clone-nine-psi.vercel.app/",
   },
 ];
 
@@ -66,7 +66,7 @@ const ProjectMain = () => {
             <SingleProject
               key={index}
               name={item.name}
-              year={item.year}
+              text={item.text}
               align={item.align}
               image={item.image}
               link={item.link}
