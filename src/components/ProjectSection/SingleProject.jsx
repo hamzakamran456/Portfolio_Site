@@ -16,7 +16,7 @@ const SingleProject = ({ name, text, align, image, link }) => {
     >
       <div>
         <h2
-          className={`md:text-3xl sm:text-2xl text-orange ${
+          className={`md:text-4xl mb-4 sm:text-2xl text-orange ${
             align === "left" ? "md:text-right" : "md:text-left"
           }`}
         >
@@ -40,7 +40,7 @@ const SingleProject = ({ name, text, align, image, link }) => {
           View <BiSolidRightTopArrowCircle />
         </a>
       </div>
-      <div className="relative w-full h-full max-h-[220px] max-w-[400px] rounded-xl overflow-hidden border border-white">
+      <div className="relative w-full h-full max-h-[226px] max-w-[400px] rounded-xl overflow-hidden border border-white">
         <div className="absolute top-0 left-0 w-full h-full bg-cyan opacity-50 hover:opacity-0 transition-all duration-500"></div>
         <img
           src={image}

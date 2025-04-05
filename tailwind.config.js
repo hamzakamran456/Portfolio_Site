@@ -38,12 +38,12 @@ export default {
       },
     },
     fontFamily: {
-      body: ["Josefin Sans"],
+      body: ["Poppins"],
       special: ["Roboto"],
     },
   },
   safelist: [
-    'bg-gray-100', // Ensure this class is never removed
+    'bg-gray-100',
   ],
   plugins: [],
 };
