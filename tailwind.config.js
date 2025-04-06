@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./src/**/*.{html,js,jsx,ts,tsx}", 
-    "./public/index.html",
-  ],
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     screens: {
       sm: "350px",
@@ -42,8 +39,6 @@ export default {
       special: ["Roboto"],
     },
   },
-  safelist: [
-    'bg-gray-100',
-  ],
+  safelist: ["bg-gray-100"],
   plugins: [],
 };

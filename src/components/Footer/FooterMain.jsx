@@ -37,7 +37,7 @@ const FooterMain = () => {
           })}
         </ul>
       </div>
-      <p className="max-w-[1200px] mx-auto text-right mt-2 mb-6 text-sm text-lightBrown">
+      <p className="max-w-[1200px] mx-auto text-right mt-2 mb-6 text-sm text-lightBrown sm:text-center">
         © 2024 HamzaKamran | All Rights Reserved.
       </p>
     </motion.div>
