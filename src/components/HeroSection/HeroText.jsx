@@ -24,15 +24,17 @@ const HeroText = () => {
         Hamza Kamran
       </motion.h1>
       <motion.p
-        variants={fadeIn("up", 0.6)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0 }}
-        className="text-lg mt-4 text-white"
-      >
-        A Passionate Web Developer and Instructor <br /> with 2 years of
-        experience.
-      </motion.p>
+  variants={fadeIn("up", 0.6)}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: false, amount: 0 }}
+  className="text-base sm:text-lg md:text-xl md:text-left lg:text-xl xl:text-2xl mt-4 text-white leading-relaxed lg:text-left sm:text-center my-3"
+>
+  A Passionate Web Developer and Instructor{" "}
+  <br className="lg:block sm:hidden" />
+  with 2 years of experience.
+</motion.p>
+
     </div>
   );
 };
